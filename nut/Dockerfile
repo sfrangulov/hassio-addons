@@ -3,8 +3,9 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-RUN apk add --no-cache jq 
-RUN apk add nut --update-cache --repository http://nl.alpinelinux.org/alpine/edge/testing/
+RUN echo "http://nl.alpinelinux.org/alpine/edge/main/" >> /etc/apk/repositories
+RUN echo "http://nl.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
+RUN apk add nut jq --update-cache
 
 RUN mkdir /var/run/nut
 RUN chown root:nut /var/run/nut
