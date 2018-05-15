@@ -4,14 +4,16 @@
   "slug": "influxdb",
   "description": "InfluxDb server",
   "url": "https://github.com/colindunn/hassio-addons/tree/master/influxdb",
-  "startup": "system",
   "arch": [
-    "aarch64",
     "amd64",
-    "armhf",
-    "i386"
+    "armhf"
   ],
-  "ports": {"8086/tcp": 8086},
+  "startup": "system",
+  "map": ["ssl"],
+  "ports": {
+    "8086/tcp": 8086
+  },
   "boot": "auto",
-  "image": "influxdb:1.5.2"
+  "options": {"env_var": []},
+  "schema": {"env_var":[{"name": "str", "value": "str"}]}
 }
