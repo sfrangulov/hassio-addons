@@ -22,7 +22,7 @@
   },
   "schema": {
     "logins": [
-      { "username": "str", "password": "str", "instcmds": "str" }
+      { "username": "str", "password": "str", "instcmds": "str", "upsmon": "str" }
     ],
     "ups": [
       { "upsname": "str", "driver": "str", "port": "str" }
