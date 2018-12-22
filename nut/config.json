@@ -11,7 +11,7 @@
   "boot": "auto",
   "options": {
     "logins": [
-      { "username": "monuser", "password": "secret", "instcmds": "all", "upsmon": "slave" }
+      { "username": "monuser", "password": "secret", "instcmds": "all" }
     ],
     "ups": [
       { "upsname": "ups", "driver": "usbhid-ups", "port": "auto" }
@@ -22,7 +22,7 @@
   },
   "schema": {
     "logins": [
-      { "username": "str", "password": "str", "instcmds": "str", "upsmon": "str" }
+      { "username": "str", "password": "str", "instcmds": "str" }
     ],
     "ups": [
       { "upsname": "str", "driver": "str", "port": "str" }
