@@ -11,7 +11,7 @@ if [ "$LOGINS" -gt "0" ]; then
         USERNAME=$(jq --raw-output ".logins[$i].username" $CONFIG_PATH)
         PASSWORD=$(jq --raw-output ".logins[$i].password" $CONFIG_PATH)
         INSTCMDS=$(jq --raw-output ".logins[$i].instcmds" $CONFIG_PATH)
-	UPSMON=  $(jq --raw-output ".logins[$i].upsmon"   $CONFIG_PATH)
+	UPSMON=$(jq --raw-output ".logins[$i].upsmon" $CONFIG_PATH)
 	echo "[$USERNAME]"            >> /etc/nut/upsd.users
         echo "  password = $PASSWORD" >> /etc/nut/upsd.users
         echo "  instcmds = $INSTCMDS" >> /etc/nut/upsd.users
