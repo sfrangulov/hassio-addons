@@ -11,7 +11,7 @@
   "boot": "auto",
   "options": {
     "logins": [
-      { "username": "nut", "password": "nut", "instcmds": "all" }
+      { "username": "nut", "password": "nut", "instcmds": "all", "upsmon": "slave" }
     ],
     "ups": [
       { "upsname": "ups", "driver": "usbhid-ups", "port": "auto" }
