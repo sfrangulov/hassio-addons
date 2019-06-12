@@ -8,7 +8,7 @@
     "armhf"
   ],
   "startup": "before",
-  "devices": ["/dev/ttyUSB:/dev/ttyUSB:rwm"],
+  "devices": ["/dev/ttyUSB0:/dev/ttyUSB0:rwm"],
   "ports": {
     "3493/tcp": 3493
   },
