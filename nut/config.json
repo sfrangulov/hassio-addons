@@ -3,6 +3,10 @@
   "version": "0.1",
   "slug": "nut",
   "description": "Manage Uninterruptible Power Supplies",
+  "arch": [
+    "amd64",
+    "armhf"
+  ],
   "startup": "before",
   "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
   "ports": {
