@@ -46,9 +46,7 @@ echo "MODE=$MODE" > /etc/nut/nut.conf
 chmod 660 /etc/nut/*
 
 # grant access to all usb devices
-chmod 777 /dev/bus/usb/*/*
-
-ls /usr/lib/nut/
+chmod 777 /dev/ttyUSB*
 
 upsdrvctl start
 upsd -D

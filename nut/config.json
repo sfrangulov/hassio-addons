@@ -1,6 +1,6 @@
 {
   "name": "Network UPS Tools",
-  "version": "0.2",
+  "version": "0.3",
   "slug": "nut",
   "description": "Manage Uninterruptible Power Supplies",
   "arch": [
@@ -8,7 +8,7 @@
     "armhf"
   ],
   "startup": "before",
-  "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
+  "devices": ["/dev/ttyUSB:/dev/ttyUSB:rwm"],
   "ports": {
     "3493/tcp": 3493
   },
@@ -18,7 +18,7 @@
       { "username": "monuser", "password": "secret", "instcmds": "all" }
     ],
     "ups": [
-      { "upsname": "ups", "driver": "usbhid-ups", "port": "auto" }
+      { "upsname": "ups", "driver": "blazer_ser", "port": "/dev/ttyUSB0" }
     ],
     "bindaddr": "0.0.0.0",
     "bindport": "3493",
