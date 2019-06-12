@@ -48,5 +48,7 @@ chmod 660 /etc/nut/*
 # grant access to all usb devices
 chmod 777 /dev/bus/usb/*/*
 
+ls /usr/lib/nut/
+
 upsdrvctl start
 upsd -D
